@@ -1,0 +1,102 @@
+# Rider
+.idea/
+.idea_modules/
+*.iml
+*.iws
+*.ipr
+*.iml
+*.sln.iml
+
+# Visual Studio
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+
+# Visual Studio Code cache/options
+.vscode/
+
+# NuGet package manager
+.nuget/
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+.nuget/packages/
+.nuget/NuGet.Config
+.nuget/NuGet.exe
+.nuget/packages.config
+
+# Entity Framework
+*.db
+*.db-shm
+*.db-wal
+Migrations/
+
+# Test Results
+TestResults/
+coverage/
+*.trx
+
+# OS specific
+.DS_Store
+Thumbs.db
+.env
+.env.local
+
+# IDE-specific files
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if using any frontend tools)
+node_modules/
+npm-debug.log
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# dotCover
+.dotCover
+
+# Local history for Visual Studio
+.localhistory/
+
+# BeatPulse healthcheck temp database
+healthchecksdb
+
+# Rider
+riderModule.xml
+*.sln.iml

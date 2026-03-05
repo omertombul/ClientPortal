@@ -1,0 +1,11 @@
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/bin/Debug/net9.0/ClientPortal.Domain.deps.json
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/bin/Debug/net9.0/ClientPortal.Domain.dll
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/bin/Debug/net9.0/ClientPortal.Domain.pdb
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ClientPortal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ClientPortal.Domain.AssemblyInfoInputs.cache
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ClientPortal.Domain.AssemblyInfo.cs
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ClientPortal.Domain.csproj.CoreCompileInputs.cache
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ClientPortal.Domain.dll
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/refint/ClientPortal.Domain.dll
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ClientPortal.Domain.pdb
+/Users/omertombul/omer/projects/dotnet/ClientPortal/src/ClientPortal.Domain/obj/Debug/net9.0/ref/ClientPortal.Domain.dll

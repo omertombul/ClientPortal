@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClientPortal.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ClientPortal.Api.Controllers.ClientsController">
+            <summary>
+            Manages clients and their resources (websites, documents)
+            </summary>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.ClientsController.CreateClient(ClientPortal.Application.Clients.CreateClientRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new client
+            </summary>
+            <param name="request">Client creation request</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Created client</returns>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.ClientsController.GetClient(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Get a client by ID
+            </summary>
+            <param name="id">Client ID</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Client details</returns>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.ClientsController.CreateWebsite(System.Guid,ClientPortal.Application.Websites.CreateWebsiteRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a website for a client
+            </summary>
+            <param name="id">Client ID</param>
+            <param name="request">Website creation request</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Created website</returns>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.ClientsController.UploadDocument(System.Guid,Microsoft.AspNetCore.Http.IFormFile,System.Threading.CancellationToken)">
+            <summary>
+            Upload a document for a client
+            </summary>
+            <param name="id">Client ID</param>
+            <param name="file">File to upload</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Document metadata</returns>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.ClientsController.AddHostingPlan(System.Guid,ClientPortal.Application.Clients.CreateHostingPlanRequest,System.Threading.CancellationToken)">
+            <summary>
+            Add a hosting plan to a client
+            </summary>
+            <param name="id">Client ID</param>
+            <param name="request">Hosting plan creation request</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Created hosting plan</returns>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.ClientsController.AddServiceSubscription(System.Guid,ClientPortal.Application.Clients.CreateServiceSubscriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Add a service subscription (product) to a client
+            </summary>
+            <param name="id">Client ID</param>
+            <param name="request">Service subscription creation request</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Created service subscription</returns>
+        </member>
+        <member name="T:ClientPortal.Api.Controllers.CurrentClientController">
+            <summary>
+            Endpoints for the current authenticated user/client to access their own resources
+            </summary>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.CurrentClientController.GetWebsites(System.Threading.CancellationToken)">
+            <summary>
+            Get all websites for the current user's client
+            </summary>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>List of websites</returns>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.CurrentClientController.GetDocuments(System.Threading.CancellationToken)">
+            <summary>
+            Get all documents for the current user's client
+            </summary>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>List of documents</returns>
+        </member>
+        <member name="T:ClientPortal.Api.Controllers.DevController">
+            <summary>
+            Development/Testing endpoints for JWT token generation
+            </summary>
+            <remarks>
+            WARNING: This controller should only be enabled in Development environment!
+            Do not expose in production.
+            </remarks>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.DevController.GenerateToken(ClientPortal.Api.Controllers.DevTokenRequest)">
+            <summary>
+            Generate a test JWT token
+            </summary>
+            <remarks>
+            This endpoint is for development/testing only. It generates a JWT token with custom claims
+            that can be used to test authenticated endpoints.
+            
+            Example request:
+            {
+              "userId": "550e8400-e29b-41d4-a716-446655440000",
+              "clientId": "550e8400-e29b-41d4-a716-446655440001",
+              "role": "Client"
+            }
+            </remarks>
+            <param name="request">Token generation request</param>
+            <returns>JWT token</returns>
+        </member>
+        <member name="T:ClientPortal.Api.Controllers.DevTokenRequest">
+            <summary>
+            Request model for token generation
+            </summary>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.DevTokenRequest.#ctor(System.Guid,System.Guid,System.String)">
+            <summary>
+            Request model for token generation
+            </summary>
+        </member>
+        <member name="T:ClientPortal.Api.Controllers.StatusController">
+            <summary>
+            Health check and status endpoints
+            </summary>
+        </member>
+        <member name="M:ClientPortal.Api.Controllers.StatusController.Get">
+            <summary>
+            Get API status
+            </summary>
+            <returns>Current API status information</returns>
+        </member>
+    </members>
+</doc>
