@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ClientPortal.Api\ClientPortal.Api.csproj" />
     <ProjectReference Include="..\..\src\ClientPortal.Application\ClientPortal.Application.csproj" />
     <ProjectReference Include="..\..\src\ClientPortal.Domain\ClientPortal.Domain.csproj" />
     <ProjectReference Include="..\..\src\ClientPortal.Infrastructure\ClientPortal.Infrastructure.csproj" />
